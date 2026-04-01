@@ -28,4 +28,6 @@ let newfilter =num.filter((e)=>{
     return e%2==0;
 })
 console.log(newfilter)
+
+
  

@@ -271,28 +271,36 @@ console.log(avg)
 // console.log(str.toUpperCase());
 // console.log(str);
 
-let arr = [85,97,44,37,76,60];
-let s=0;
-for(let mark of arr){
- s = s+mark;
+// let arr = [85,97,44,37,76,60];
+// let s=0;
+// for(let mark of arr){
+//  s = s+mark;
  
-}
-console.log(s)
+// }
+// console.log(s)
 
-//ten% discount on every items
-i=0
-let items = [250,645,300,900,50]
-for(let it of items){
-    let offer = it/10;
-    items[i] = items[i]-offer;
-    console.log(items[i])
-    i++;
-}
+// //ten% discount on every items
+// i=0
+// let items = [250,645,300,900,50]
+// for(let it of items){
+//     let offer = it/10;
+//     items[i] = items[i]-offer;
+//     console.log(items[i])
+//     i++;
+// }
 
-let numb = [1,2,3,4,5]
-numb.forEach( function (square)
-{
-    console.log(square*square)
-})
+// let numb = [1,2,3,4,5]
+// numb.forEach( function (square)
+// {
+//     console.log(square*square)
+// })
 
-  
+  let newBtn = document.createElement("button");
+  newBtn.innerText = "click me";
+
+  newBtn.style.color = "white"
+  newBtn.style.backgroundColor = "red";
+
+  document.querySelector("body").prepend(newBtn);
+
+
