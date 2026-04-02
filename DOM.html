@@ -7,33 +7,45 @@
     <link rel="stylesheet" href="styldom.css">
 </head>
 <body>
-    <!-- <p id="text1">Hello I am Abhi</p> -->
 
-    <!-- <h1 id="text1"></h1> -->
-    <!-- <button  onclick="ani()">Hide</button> -->
-    <!-- <button  onclick="Show()">Show</button> -->
+    <h1 id="text1">Hello I am Abhi</h1>
+    <button  onclick="Hide()">Hide</button>
+    <button  onclick="Show()">Show</button>
+    <hr>
     
-    <!-- <p id="text">0</p> -->
-    <!-- <button  onclick="Inc()">Inc</button> -->
-    <!-- <button  onclick="Dec()">Dec</button> -->
-    <!-- <div id="box"> </div> -->
-    <!-- <button  onclick="photo()">Click</button> -->
-    <!-- <h2>Hello javaScript</h2> -->
-     
-     <!-- <div class="box">second div</div> -->
-     <!-- <div class="box">third div</div> -->
-      <!-- <p class="p">I am a paragraph</p> -->
-    <!-- <button  onclick="colorred()"  style="color: red;">Click for red</button>-->
-    <!-- <button  onclick="colorgreen()" style="color: green;" >Click for green</button>
+    <p id="text">0</p>
+    <button  onclick="Inc()">Inc</button>
+    <button  onclick="Dec()">Dec</button><br><br> 
+    <hr>
+
+    <div id="boxpic"> </div>
+    <button  onclick="photo()">Click me!</button>
+    <hr>
+
+    <!-- <h2>Hello javaScript</h2>
+    <div class="box2">second div</div> 
+    <div class="box3">third div</div>
+    <div class="box">third div</div> -->
+    <!-- <p class="p">I am a paragraph</p> -->
+
+    <button  onclick="colorred()"  style="color: red;">Click for red</button>
+    <button  onclick="colorgreen()" style="color: green;" >Click for green</button>
     <button onclick="colorblue()" style="color: blue;">Click for blue</button>
     <div class="box"></div>
+    <hr>
+
     <h1 id="num">0</h1>
-    <button id="IncBtn">Inc</button>
-    <button id="ResetBtn">Reset</button>
-    <button id="DecBtn">Dec</button><br><br>
+    <button onclick="IncBtn()">Inc</button>
+    <button onclick="ResetBtn()">Reset</button>
+    <button onclick="DecBtn()">Dec</button><br><br>
+    <hr>
+    
     <input type="text" id="textInput" placeholder="Type something...">
     <button onclick="updateH1()">Print in H1</button>
-    <h1 id="outputHeader">Your text will appear here</h1>
+    <h1 id="convertH1">convert text here</h1>
+    <br>
+    <hr>
+    
     <div class="container">
         <label for="colorInput">Enter a color name or hex code:</label>
         <br>
@@ -41,29 +53,10 @@
         <button onclick="changeBoxColor()">Apply Color</button>
 
         <div class="color-box" id="targetBox"></div>
-    </div> 
-    //form validation
-    calculater
+    </div>
+
     
-    <button onclick="App()">Print</button> -->
-    <form >
-        <p id="errname"></p>
-        Enter Name <input type="text" id="name"><br><br>
-
-        <p id="errnum"></p>
-        Enter Number <input type="text" id="num"><br><br>
-
-        <p id="erremail"></p>
-        Enter Email <input type="text" id="email"><br><br>
-
-        <p id="errpass"></p>
-        Enter Password <input type="email" id="pass"><br><br>
-
-        <p id="errcpass"></p>
-        Enter confirm Password <input type="email" id="cpass"><br><br>
-
-        <input type="submit" onclick="return formValidate()" >
-    </form>
+    <button onclick="App()">Print</button>
     <script src="DOM.js"></script>
 </body>
 </html> 

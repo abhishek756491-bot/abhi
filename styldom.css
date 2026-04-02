@@ -1,6 +1,6 @@
 .box{
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border: 1px solid rgb(153, 105, 51);
     margin: 5px;
     text-align: center;
@@ -17,3 +17,9 @@
             margin-top: 10px;
             transition: background-color 0.3s ease; /* Smooth transition for color change */
         }
+
+#boxpic{
+    height: 200px;
+    width: 250px;
+    border: 1px solid red;
+}
