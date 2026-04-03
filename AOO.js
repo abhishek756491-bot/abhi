@@ -32,26 +32,30 @@
 
 
 let infor = [{
-    name:"abhinav",
+    name:"Abhinav",
     roll:"45",
     corse:"full",
-    branch:"cse"
+    branch:"cse",
+    image:"thar rox.jpeg"
 
 },{
-    name:"abhinash",
+    name:"Abhinash",
     roll:"50",
     corse:"Ds",
-    branch:"cse sp"
+    branch:"cse sp",
+    image:"defender.jpeg"
 },{
-    name:"abhisir",
+    name:"Abhisir",
     roll:"46",
     corse:"DA",
-    branch:"Mba"
+    branch:"Mba",
+    image:"fortuner.jpeg"
 },{
-    name:"naman",
+    name:"Naman",
     roll:"49",
     corse:"finance minister",
-    branch:"bba"
+    branch:"bba",
+    image:"land cruiser.jpeg"
 }]
 
 let show = document.querySelector("#Show");
@@ -60,6 +64,7 @@ infor.map((i)=>{
  show.innerHTML += `
 
 <div>
+  <img src="${i.image}" width=100px height=100px>
   <h1> ${i.name}</h1>
   <h3> ${i.roll}</h3>
   <h3> ${i.corse}</h3>
