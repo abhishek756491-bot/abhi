@@ -73,11 +73,11 @@
 
 
 
-//1. Even or Odd Checker
+//Q1. Even or Odd Check
 
 let even=()=>{
     let number=prompt("Enter your choice number")
-    if(number%2)
+    if(number%2===0)
         alert("Even")
     else
         alert("Odd")
@@ -89,19 +89,18 @@ let math=()=>{
 let num=prompt("Enter your choice number")
 if (num>0)
     alert("positive number")
+else if(num<0)
+    alert("negative number")
 else
     alert("0")
-if(num<0)
-    alert("negative number")
 
 }
 
-console.log(math());
 
 //
 
 
-//1. Age Checker (Voting Eligibility)
+//Q3. Voting Eligibility
 
 let vote=()=>{
     let i=prompt("Enter your age for vote")
@@ -112,5 +111,18 @@ let vote=()=>{
         alert("you can eligible for vote")
 }
 
-//largest of two
+//Q4. Largest of Two Numbers
 
+let large=()=>{
+    let a=prompt("Enter first number")
+    let b=prompt("Enter second number")
+    if ( a>b){
+        let l=a;
+        alert("Largest number",+l)
+        }
+    else{
+        let s=b
+        alert("Largest number",+s)
+        }
+}
+console.log(large());
