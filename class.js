@@ -1,24 +1,123 @@
 
-function btn(){
-    let writearea=document.querySelector("#write").value;
-   let print=document.querySelector("#print");
+// function btn(){
+//     let writearea=document.querySelector("#write").value;
+//    let print=document.querySelector("#print");
 
-    let area=writearea.toUpperCase();
-    print.innerText=area;
+//     let area=writearea.toUpperCase();
+//     print.innerText=area;
+// }
+
+// function btntolower(){
+//     let writearea=document.querySelector("#write").value;
+//    let print=document.querySelector("#print");
+
+//     let area=writearea.toLowerCase();
+//     print.innerText=area;
+// }
+
+// function btnlength(){
+//     let writearea=document.querySelector("#write").value;
+//    let print=document.querySelector("#print");
+
+//     let area=writearea.length;
+//     print.innerText=area;
+// }
+
+// function btnreverse(){
+//     let writearea=document.querySelector("#write").value;
+//    let print=document.querySelector("#print");
+
+//     let reversedstr="";
+//    for(let i=writearea.length-1;i>=0;i--){
+//        reversedstr+=writearea[i]
+    
+//     print.innerHTML=reversedstr;
+//     }
+// }
+
+// function btncount(){
+//     let writearea=document.querySelector("#write").value;
+//    let print=document.querySelector("#print");
+
+//    let count=0;
+//    for(let i=0;i<=writearea.length;i++)
+//    {
+//     let char=writearea[i];
+  
+//     if(char === 'a' || char === 'e'  || char === 'i'  || char === 'o'  || char === 'u' 
+//          || char === 'A'  || char === 'E'  || char === 'I'  || char === 'O'  || char === 'U' )
+      
+//        count++;
+//      }
+//     print.innerHTML=count;
+//     }
+
+let EvenNodd=()=>{
+    let n=prompt("Enter our number")
+    if(n%2===0)
+        alert("Even")
+    else
+        alert("Odd")
 }
+// console.log(EvenNodd())
 
-function btntolower(){
-    let writearea=document.querySelector("#write").value;
-   let print=document.querySelector("#print");
-
-    let area=writearea.toLowerCase();
-    print.innerText=area;
+let count=()=>{
+    let n=prompt("Enter your choice");
+    let l=n.length;
+    alert(+l)
 }
+// console.log(count())
 
-function btnlength(){
-    let writearea=document.querySelector("#write").value;
-   let print=document.querySelector("#print");
-
-    let area=writearea.length;
-    print.innerText=area;
+let uppercase=()=>{
+    let n=prompt("Enter your choice")
+    let l=n.toUpperCase();
+    alert(l)
 }
+// console.log(uppercase())
+
+let sum=()=>{
+    let arr =[]
+    let sum=0
+    for(let i=1;i<=5;i++){
+        let input=prompt("Enter number "+(i))
+        arr.push(Number(input));
+    }
+    for(let i=0;i<arr.length;i++)
+     sum=sum+arr[i]
+      alert(+sum)
+    
+}
+// console.log(sum())
+
+
+let reverse=()=>{
+    let input=document.querySelector(".input").value;
+    let print=document.querySelector(".print");
+
+    let reversedstr="";
+    for(let i=input.length-1;i>=0;i--){
+        reversedstr+=input[i]
+    
+    print.innerHTML=reversedstr;
+    }
+//   console.log(reverse())
+
+}
+let even=()=>{
+    
+    let arr =[]
+    let count=1
+     for(let i=1;i<=5;i++){
+        let input=prompt("Enter number "+(i))
+        arr.push(Number(input));
+      }
+
+     for(let i=0;i<arr.length;i++){
+        if(arr[i] %2 === 0){
+            count++;
+        }
+         console.log(+count)
+    }
+}
+console.log(even())
+

@@ -313,7 +313,7 @@ while (a<=n){
 //     count++
 //   alert(count)
 // }
-// // console.log(count())
+// console.log(count())
 
 //Q16. Print Even Numbers
 let evenN=()=>{
