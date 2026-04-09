@@ -112,8 +112,9 @@ function btncountvowel(){
          let writearea=document.querySelector("#write").value.trim();
          let print=document.querySelector("#print");
       
-      let count=0
-    
+      let result=writearea.split(" ").length;
+       print.innerHTML=result;
+      
     }
     let EvenNodd=()=>{
     let n=prompt("Enter our number")
