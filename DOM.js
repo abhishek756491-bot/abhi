@@ -185,19 +185,18 @@ let counter=()=>{
     p.innerHTML=count;
 }
 
-let limit=()=>{
-    let t=document.querySelector(".type").value;
-    let co=document.querySelector(".count")
-    let final=document.querySelector(".textfinal")
 
 
-    let typelength=t.length;
-   
     
-    if(typelength <= 20){
+let limit=()=>{
+    let t=document.querySelector(".type").value.substring(0,20);
+    let co=document.querySelector(".countN")
+    let final=document.querySelector(".textfinal")
+    
+    let typelength=t.length;
      co.innerHTML=typelength;
-
-
-    }else if(20 < typelength)
-        alert("stop taking input")
+     if(t > 20){
+       alert("stop taking input")
+    }
+     final.innerHTML=t;
 }
