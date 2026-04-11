@@ -38,5 +38,16 @@ let fetchdata=async ()=>{
 
     console.log(mydata)
 
+    let show=document.querySelector("#show")
+    mydata.map((e)=>{
+        show.innerHTML +=
+        `
+        <tr>
+          <td> ${e.id}</td>
+          <td> ${e.title}</td>
+          <td> ${e.body}</td>
+        </tr>
+        `
+    })
+
 }
-fetchdata()

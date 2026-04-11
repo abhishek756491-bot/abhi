@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .bod{
-            gap: 10px;
-            flex-direction: row;
+        body{
+            background-color: rgb(174, 174, 219);
         }
     </style>
 </head>
 <body>
     <!-- <div class="bod"></div> -->
-
+    <button onclick="fetchdata()">click me!</button>
     <table border="1">
     <Tr>
         <th>Id</th>
         <th>tittle</th>
         <th>body</th>
     </Tr>
+
+    <tbody id="show" border="none">
+
+    </tbody>
     </table>
     
     <script src="fetch.js"></script>
