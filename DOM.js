@@ -186,16 +186,26 @@ let counter=()=>{
 }
 
 
+let inpcheck=()=>{
+
+    let t=document.querySelector(".type").value
+
+     let typelength=t.length;
+     
+     if(typelength > 20){
+       alert("stop taking input")
+    }
+}
 
     
 let limit=()=>{
-    let t=document.querySelector(".type").value.substring(0,20);
+    let t=document.querySelector(".type").value
     let co=document.querySelector(".countN")
     let final=document.querySelector(".textfinal")
     
     let typelength=t.length;
      co.innerHTML=typelength;
-     if(t > 20){
+     if(typelength > 20){
        alert("stop taking input")
     }
      final.innerHTML=t;
