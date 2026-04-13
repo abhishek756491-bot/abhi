@@ -29,15 +29,14 @@ do{
 */
 
 //for-of loop
-/*
-let str = "abhishek";
-let size = 0;
-for(let i of str){
-  console.log("i = ",i)
-    size++;  
-}
-console.log("string size = ",size);
-*/
+
+// let str = "abhishek";
+// let size = 0;
+// for(let i of str){
+//   console.log("i = ",i)
+//     size++;  
+// }
+// console.log("string size = ",size);
 
 //for-in loop
 
@@ -180,8 +179,8 @@ console.log(avg)
 // let add = hero.concat(heroin,random);
 // console.log(add);
 
-//shift() work as delete item like pop
-//unshift() work as add item like push
+//shift() work as delete item like pop from start
+//unshift() work as add item like push   from start
 
 //slice(0 to +1)
 //splice
@@ -245,6 +244,7 @@ console.log(avg)
 //     arr[i-1] = i;
 //  }
 //  console.log(arr);
+
 //  let sum = arr.reduce((res,curr) => {
 //     return res+curr;
 //  });
