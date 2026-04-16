@@ -36,14 +36,14 @@
 // for(i=1; i<=30; i++){
 //     if(i/2 !== 0 )
 //     console.log("Odd")
-//     else(i/2 === 0 ) 
+//     else
 //     console.log("Even")
 // }
 
 // //Create a button with the label "Show Image". When clicked: If the image is
 // //hidden, show it and change button text to "Hide Image
 // function toggleImage() {
-//             // Get references to the image and button elements
+// //             // Get references to the image and button elements
 //             var image = document.getElementById("myImage");
 //             var button = document.getElementById("toggleButton");
 
@@ -279,7 +279,8 @@ let t=parseInt(prompt("Enter your choice number for table"))
  a=1
  while(a<=10)
     table=t*a
-    console.log("Table is ",+table)
+    console.log("Table is ",table)
+    a++;
 }
 // console.log(table())
 
@@ -303,16 +304,17 @@ while (a<=n){
 
 //Q15. Count Digits in a Number
 
-// let count=()=>{
-// //Take a number input.
-// let n=prompt("Enter your choice number")
+let count=()=>{
+//Take a number input.
+let n=prompt("Enter your choice number")
 
-// //Use loop to count how many digits are present.
-// let count=0;
-// while (n%10)
-//     count++
-//   alert(count)
-// }
+//Use loop to count how many digits are present.
+let count=0;
+while(n>=0)
+    n=n/10;
+    count++
+  alert(count)
+}
 // console.log(count())
 
 //Q16. Print Even Numbers

@@ -143,7 +143,7 @@ let sum=()=>{
     let arr =[]
     let sum=0
     for(let i=1;i<=5;i++){
-        let input=prompt("Enter number "+(i))
+        let input=Number(prompt("Enter number "+(i)))
         arr.push(Number(input));
     }
     for(let i=0;i<arr.length;i++)
