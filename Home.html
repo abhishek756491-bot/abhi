@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .calendar-container {
+    background: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+#month-name { background: #ff4d4d; color: white; margin: -20px -20px 10px; padding: 10px; border-radius: 10px 10px 0 0; }
+#day-number { font-size: 50px; font-weight: bold; margin: 10px 0; }
+    </style>
 </head>
 <body>
-    
+    html
+<div class="calendar-container">
+    <p id="month-name"></p>
+    <p id="day-name"></p>
+    <p id="day-number"></p>
+    <p id="year"></p>
+</div>
+
+
+<script>
+    const monthEl = document.getElementById("month-name");
+const dayNameEl = document.getElementById("day-name");
+const dayNumEl = document.getElementById("day-number");
+const yearEl = document.getElementById("year");
+
+const date = new Date(); // Current date object
+
+// Month aur Day ke naam set karein
+monthEl.innerText = date.toLocaleString("en", { month: "long" });
+dayNameEl.innerText = date.toLocaleString("en", { weekday: "long" });
+dayNumEl.innerText = date.getDate();
+yearEl.innerText = date.getFullYear();
+</script>
 </body>
 </html>

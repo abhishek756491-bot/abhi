@@ -1,0 +1,19 @@
+.hidden { display: none; }
+
+.show{
+    display: flex;
+    justify-content: space-around;
+    border:1px solid rgb(172, 207, 43)
+    }
+h1{
+  color: red;
+    }
+h3{
+    display: flex;
+    justify-content:space-between;
+    color: rgb(227, 127, 255);
+}
+p{
+    font-size: 10px;
+    color: red;
+}
