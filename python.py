@@ -1,7 +1,7 @@
 # a=input("Enter your name")
 # print(len(a))
 
-#count doller in strin
+# count doller in strin
 # str="njkin $lkmn$ kjnfdn$ $KJnin $"
 # print(str.count("$"))
 
