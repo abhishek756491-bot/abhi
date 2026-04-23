@@ -46,8 +46,40 @@ for x in range(11) :
 #        print("*",end=" ") 
 #  print()
 
-for i in range(10):
-  if i==7:
-    print("processing is enough..plz break")
-    break
-  print(i)
+
+# @ 
+# @ @ @ 
+# @ @ @ @ @ 
+
+
+# num=int(input("Enter row number"))
+# k=1
+# for i in range(1,num+1):
+#  for j in range(1,k+1):
+#   print("@",end=" ")
+#  k=k+2
+#  print()
+
+# num=int(input("Enter row number"))
+# for i in range(0,num):
+#   for j in range(0,num-i-1):
+#        print(end=" ") 
+#   for j in range(0,i+1):
+#          print("*",end=" ") 
+#   print()
+
+
+
+# * * * * * 
+#  * * * * 
+#   * * * 
+#    * * 
+#     * 
+
+# num=int(input("Enter row number"))
+# for i in range(num,0,-1):
+#    for j in range(0,num-i):
+#          print(end=" ")
+#    for j in range(0,i):
+#           print("*",end=" ")
+#    print()
