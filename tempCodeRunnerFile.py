@@ -1,1 +1,13 @@
- # if j>=7 and j<=13:
+s="Learning Python is very easy !!!"
+# n=len(s)
+# i=0
+# print("Forward direction")
+# while i<n:
+#   print(s[i],end=' ')
+#   i=i+1
+#   print("Backward direction")
+#   i=-1
+#   while i>=-n:
+#     print(s[i],end=' ')
+#     i=i-1 
+
