@@ -1,4 +1,4 @@
-#q1 Expected Output: {"name": "Alice", "age": 21, "grade": "B", "city": "New York"}
+q1 Expected Output: {"name": "Alice", "age": 21, "grade": "B", "city": "New York"}
 
 dics: student = {"name": "Alice", "age": 20, "grade": "B"}
 dics["age"]=21
@@ -32,5 +32,29 @@ default = 0
 print(dict.fromkeys(keys,default))
 
 employee = {"fname": "John", "age": 30, "dept": "Engineering"}
-employee."full_name"
+# employee."full_name"
 print(employee)
+
+d=eval(input("Enter dictionary:"))
+s=sum(d.values())
+print("Sum= ",s)
+
+word=input("Enter any word: ")
+d={}
+for x in word:
+   d[x]=d.get(x,0)+1
+for k,v in d.items():
+  print(k,"occurred ",v," times")
+
+n=int(input("Enter the number of students: "))
+d={}
+for i in range(n):
+ name=input("Enter Student Name: ")
+ marks=input("Enter Student Marks: ")
+ d[name]=marks
+ print(name,marks)
+
+A={"a":10,"B":20,"C":30}
+B={"B":5,"C":15,"D":25}
+A.sum(B)
+print(A)
