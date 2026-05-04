@@ -148,3 +148,136 @@ print(x)
 
 List = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 print(List[0:3])
+
+List = [1, 2, 3, 2, 1]
+
+if List == List[::-1]:
+    print("Palindrome hai")
+else:
+    print("Palindrome nahi hai")
+
+
+ListA = [1, 5, 10, 20]
+ListB = [6, 7, 20, 80, 100]
+ListC = [3, 4, 15, 20, 30, 70, 80]
+ListA = set(ListA)
+ListB = set(ListB)
+ListC = set(ListC)
+Listd =ListA & ListB & ListC
+print(Listd)
+
+List = ["apple", "pie", "banana", "kiwi", "pear"]
+k=5
+for i in List:
+    x = [i for i in List if len(i) >= k]
+print(x)
+
+List = [10, 20, 30, 25, 40]
+List.sort()
+print(List == List.sort())
+
+Keys = ["name", "age", "city"]
+Values = ["Alice", 25, "New York"]
+k=dict(zip(Keys,Values))
+print(k)
+
+ListA = [1, 2, 3, 4, 5]
+ListB = [2, 4, 6]
+ListA = set(ListA)
+ListB = set(ListB)
+ListC = ListA-ListB
+print(list(ListC))
+
+List = [10, -5, 20, -1, 0, -8]
+i=[i for i in List if i >= 0]
+print(i)
+
+Nested = [['apple', 'banana'], ['cherry', 'date']]
+for x in Nested:
+    x.append("elderberry")
+print(Nested)
+
+List1 = ["Hello ", "Take "]
+List2 = ["Dear", "Sir"]
+L=[x+y for x in List1 for y in List2 ]
+print(L)
+
+List2D = [[1, 2, 3], [4, 5], [6, 7, 8, 9]]
+List1D = []
+for i in List2D:
+    List1D.extend(i)
+print(List1D)
+
+complex_list = [1, [2, [3, 4], 5], 6, [7, 8]]
+
+result = []
+stack = [complex_list]   # pura list ek item ke form me daala
+
+while stack:
+    item = stack.pop()
+
+    if isinstance(item, list):
+        stack.extend(item)   # list ko tod ke stack me daal diya
+    else:
+        result.append(item)
+
+# reverse karna padega kyunki order ulta ho gaya
+result.reverse()
+
+print("Deeply Nested:", complex_list)
+print("Fully Flattened:", result)
+
+numbers = [10, 20, 30, 40]
+sum = []
+total = 0
+for i in numbers:
+    total=total+i
+    sum.append(total)
+print(sum)
+
+List = [1, 2, 3, 4, 5]
+k = List[2:]+List[:2]
+print(k)
+
+l= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+l.split(3)
+print(l)
+
+my_data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+n = 3
+
+chunks = []
+
+for i in range(0, len(my_data), n):
+    chunks.append(my_data[i:i+n])
+
+print("Original:", my_data)
+print("Chunks:", chunks)      
+
+List = [0, 1, 0, 3, 12]
+n=[n for n in List if n != 0]
+z=[n for n in List if n == 0]
+l=n+z
+print(l)
+
+n = 20
+i=1
+while i<n:
+    if i%2 != 0:
+        print(i)
+    i += 1
+
+lst = [1, 2, 3]
+
+result = [[]]
+
+for i in lst:
+    new = []
+    
+    for subset in result:
+        new.append(subset + [i])
+    
+    result = result + new
+
+print("Original:", lst)
+print("Subsets:", result)
