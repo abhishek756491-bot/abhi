@@ -1,3 +1,3 @@
-List = [1, 2, 3, 4, 5]
-k = List[:2]+List[2:]
-print(k)
+l= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+l.split(3)
+print(l)

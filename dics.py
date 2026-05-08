@@ -1,9 +1,7 @@
-q1 Expected Output: {"name": "Alice", "age": 21, "grade": "B", "city": "New York"}
-
-dics: student = {"name": "Alice", "age": 20, "grade": "B"}
-dics["age"]=21
-dics.update({ "city": "New York"})
-print(dics)
+student = {"name": "Alice", "age": 20, "grade": "B"}
+student["age"]=21
+student.update({ "city": "New York"})
+print(student)
 
 x= ["name", "age", "city"]
 y= ["Bob", 25, "London"]
@@ -98,7 +96,7 @@ for k,v in dc.items():
 
 ##########################################################
 
-q1 Expected Output: {"name": "Alice", "age": 21, "grade": "B", "city": "New York"}
+#q1 Expected Output: {"name": "Alice", "age": 21, "grade": "B", "city": "New York"}
 
 dics: student = {"name": "Alice", "age": 20, "grade": "B"}
 dics["age"]=21
