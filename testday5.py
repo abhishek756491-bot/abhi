@@ -12,13 +12,38 @@ print(result)
 
 # Question 2:
 # Create a user define function which can calculate square value of number.
-# def s(n):
-#     s=n*n
-#     return(s)
+def s(n):
+    s=n*n
+    return(s)
+print(s(9))
 
 # Question 3:
 # Define a function that can convert a integer into a string and print it in console.
+def convert(num):
+    s=str(num)
+    print(s)
+
+convert(45)
 
 
+# Question 4:
+# Define a function which can print a dictionary where the keys are numbers
+# between 1 and 20 (both included) and the values are square of keys.
 
-def diction():
+def square_dict():
+    x={x:x*x for x in range(1,20)}
+    print(x)
+
+square_dict()
+
+# Question 5:
+# Define a function which can generate a dictionary where the keys are
+# numbers between 1 and 20 (both included) and the values are square of keys.
+# The function should just print the values only.
+
+def square_dict():
+    d = {x: x*x for x in range(1, 21)}
+    print(d.values())
+square_dict()
+
+

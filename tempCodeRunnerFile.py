@@ -1,1 +1,1 @@
-Q.4 Write a program to print the list after removing delete even numbers in
+def dictionary(x):
