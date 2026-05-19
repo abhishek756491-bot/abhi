@@ -3,7 +3,7 @@ n=int(input("Enter any numner: "))
 p=1
 for i in range(1,n+1):
     p=p*i
-    print(p)
+print(p)
 
 
 # Q.1(b)Write a Python program to count the total number of digits in a number
@@ -16,18 +16,23 @@ print(count)
 
 # Q.2(a)Write a program that prompts the user to enter their age and prints the corresponding age
 # group. The program should use the following age groups:
-age=int(input("Enter your age: "))
 
-if age>=0 and age<=12:
+age = int(input("Enter your age: "))
+
+if age >= 0 and age <= 12:
     print("Child")
-elif age<=19:
+
+elif age >= 13 and age <= 19:
     print("Teenager")
-elif age<=59:
+
+elif age >= 20 and age <= 59:
     print("Adult")
-elif age>=60:
-    print("Sinior citizen")
+
+elif age >= 60:
+    print("Senior Citizen")
+
 else:
-    print("Invalid ")
+    print("Invalid")
 
 # Q.2(b)Write a program to count occurrences of all characters within a string
 abhi="apple"
@@ -48,16 +53,18 @@ for i in range(5,0,-1):
     print()
 
 #Q.3(b) Write a program to check whether a number is prime or not,using user define function.
-n=int(input("Enter number: "))
-if n>1:
-    for i in range(2,n):
-        if (n%i)==0:
-            print(n,"is not prime")
+n = int(input("Enter a number: "))
+
+if n <= 1:
+    print(n, "is not a prime number")
+
+else:
+    for i in range(2, n):
+        if n % i == 0:
+            print(n, "is not a prime number")
             break
     else:
-        print(n,"is prime")
-else:
-    print(n,"is not prime")
+        print(n, "is a prime number")
 
 # Q.4(a)Count and print how many times football; appears in list.
 sport=["cricket","football","tennis","football","hockey"]
