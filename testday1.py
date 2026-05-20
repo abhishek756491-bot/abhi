@@ -69,27 +69,30 @@ else:
 # Q.4(a)Count and print how many times football; appears in list.
 sport=["cricket","football","tennis","football","hockey"]
 count=0
-for i in range(len(sport)):
-    if sport[i] == "football":
+for i in sport:
+    if i == "football":
         count += 1
 print("football is ",count,"times in sports")
+
 
 # Q.4(b)Find and print the largest and smallest number in a list [8, 2, 15, 1, 9] without using max(),min()
 # and sort().
 listt=[8,2,15,15,1,9]
-k=listt[0]
-for i in range(len(listt)):
-    if listt[i] > k:
-        k=listt[i]
-print("large num is ",k)
-for i in range(len(listt)):
-    if listt[i] < k:
-        k=listt[i]
-print("small num is ",k)
+for i in listt:
+    if i > large:
+        large = i
+
+    if i < small:
+        small = i
+
+print("large num is", large)
+print("small num is", small)
 
 # Q.5(a)Write a code to print the key of a minimum value from the following dictionary.
-marks={"math":89,"phy":80,"chem":67,"eng":75}
-k=min(marks)
+marks = {"math":89, "phy":80, "chem":67, "eng":75}
+
+k = min(marks, key=marks.get)
+
 print(k)
 
 # Q.5(b)Find Common Elements in Two Lists.
