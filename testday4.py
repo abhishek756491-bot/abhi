@@ -20,16 +20,15 @@ for i in items:
     print(i, end=", ")
 
 Q3.
-lines=[]
-print("write here")
+print("Write here")
+
 while True:
     s = input()
-    if s:
-        lines.append(s.upper())
-    else:
+
+    if s == "":
         break
-for line in lines:
-    print(line)
+
+    print(s.upper())
 
 Q4
 k = input("Enter: ")

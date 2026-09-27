@@ -31,7 +31,7 @@ convert(45)
 # between 1 and 20 (both included) and the values are square of keys.
 
 def square_dict():
-    x={x:x*x for x in range(1,20)}
+    x={x:x*x for x in range(1,21)}
     print(x)
 
 square_dict()

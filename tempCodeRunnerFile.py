@@ -1,2 +1,2 @@
-x={x:x*x for x in range(1,11)}
-print(dict(x))
+married = bool(input("Married ? [True|False]"))
+# print(married)
