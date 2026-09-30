@@ -87,31 +87,33 @@
 
 
 #merge two character in a single string
-# s1=input("Enter first string :")
-# s2=input("Enter second string :")
-# r=''
-# i=0
-# while i < len(s1):
-#     r=r+s1[i]
-#     r=r+s2[i]
+# s1 = input("Enter first string : ")
+# s2 = input("Enter second string : ")
+# r = ''
+# i = 0
+# while i < len(s1) or i < len(s2):
+#     if i < len(s1):
+#         r = r + s1[i]
+#     if i < len(s2):
+#         r = r + s2[i]
 #     i += 1
 # print(r)
 
 #short number and alphabates first alphabates
 
-s=input("Enter character ")
-i=0
-alpha=''
-digit=''
-while i < len(s):
-    if s[i].isalpha():
-        alpha=alpha+s[i]
-    if s[i].isdigit():
-        digit=digit+s[i]
-    i+=1
-alpha = ''.join(sorted(alpha))
-digit = ''.join(sorted(digit))
-print(alpha+digit)
+# s=input("Enter character ")
+# i=0
+# alpha=''
+# digit=''
+# while i < len(s):
+#     if s[i].isalpha():
+#         alpha=alpha+s[i]
+#     if s[i].isdigit():
+#         digit=digit+s[i]
+#     i+=1
+# alpha = ''.join(sorted(alpha))
+# digit = ''.join(sorted(digit))
+# print(alpha+digit)
 
 ########### in anothor way
 
@@ -139,4 +141,36 @@ print(alpha+digit)
 #     else:
 #         n=n+p*(int(x)-1)
 # print(n)
+
+#q9remove duplicates value in string
+
+# s = input("Enter string: ")
+# d = ''
+# for x in s:
+#     if x not in d:
+#         d += x
+# d = ''.join(sorted(d))
+# print(d)
+
+#auurnrence of character
+# s = input("Enter string: ")
+# d = ''
+
+# for x in s:
+#     if x not in d:
+#         print(x,"-",s.count(x), ",",end='')
+#         d += x
+
+#another way
+# s=input("Enter character : ")
+# d={}
+# for x in s:
+#     if x in d.key():
+#         d[x]=d[x]+1
+#     else:
+#         d[x]=1
+# for k,v in d.items():
+#     print("{}={} times ".formate(k,v))
+
+# print("{:08.3f}".format(12343453434.12))
 
