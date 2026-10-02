@@ -97,15 +97,57 @@
 # print(nlist[1][2])
 
 #14
-l=["Laptop", "Mouse", "Monitor", "Keyboard"]
+# l=["Laptop", "Mouse", "Monitor", "Keyboard"]
 # print("Laptop" in l)
 
 #15 longest string
-large_str = l[0]
-for x in l:
-    if len(large_str) < len(x):
-        large_str = x
-print(large_str)
+# large_str = l[0]
+# for x in l:
+#     if len(large_str) < len(x):
+#         large_str = x
+# print(large_str)
 
+#16
+# l= [1, 2, 3, 4, 5]
+# s=[i*i for i in l]
+# print(s)
 
+#17
+# a=[10, 20, 30, 10, 40, 10, 50]
+# print(a.count(10))
 
+#18
+# l=[x for x in a if x != 10]
+# print(l)
+
+#19
+# b=["Mike", "", "Emma", "Kelly", "", "Brad"]
+# r=[x for x in b if x != ""]
+# print(r)
+
+#20
+# duplicates = [10, 20, 10, 30, 40, 40, 20, 50]
+# u=set(duplicates)
+# unique=list(u)
+# print(unique)
+
+#21
+# mix=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# even=[x for x in mix if x%2 == 0]
+# print(even)
+
+#22
+# l1=["Py", "is", "awes"]
+# l2=["thon", " ", "ome"]
+# l3=[]
+# for x,y in zip(l1,l2):
+#    l3.append(x+y)
+# print(l3)
+
+#23
+List1= [10, 20, 30]
+List2= [100, 200, 300]
+list3= zip(List1,List2)
+for x,y in list3:
+    list3
+print(list3)
