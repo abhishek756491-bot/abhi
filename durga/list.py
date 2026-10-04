@@ -294,13 +294,14 @@ for x in l:
 print(k)
 
 39
-l=[1, [2, [3, 4], 5], 6, [7, 8]]
-k=[]
-for x in l:
-    if isinstance(x,list):
-        k.extend(x)
-    else:
-        k.append(x)
+nested = [1, [2, 3], [4, [5, [6, 7]]]]
+k = []
+def flatten(data):
+    for x in data:
+        if isinstance(x, list):
+            flatten(x)  # अगर टुपल है, तो फंक्शन खुद को दोबारा चलाएगा
+        else:
+            k.append(x)  # अगर नंबर है, तो लिस्ट में जोड़ देगा
 print(k)
 
 
